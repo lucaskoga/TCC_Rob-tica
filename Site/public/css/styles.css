@@ -1,0 +1,190 @@
+/* Geral */
+*{
+    font-family: 'Roboto';
+    
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    
+}
+
+header{
+    background-color: lightgray;
+    border-bottom: 1px solid #ccc;
+}
+.row {
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+
+.btn-primary{
+    background-color: rgba(0, 0, 0, 0.64);  
+    border: 2px solid #fff;
+    text-align: center;
+    padding: auto;
+}
+.btn-primary:hover{
+    background-color: darkgray;
+    border-color: black;
+}
+.msg{
+    text-align: center;
+}
+/* NavBar */
+#navbar img{
+    width: 60px;
+}
+#navbar{
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+#navbar a{
+    font-size: 16px;
+    color: white;
+    
+}
+#navbar a:hover{
+    color: darkblue;
+}
+
+.form-control {
+    width: 65%; 
+    padding: 8px; 
+    font-size: 16px; 
+}
+
+#atividade-create-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+/* Botao Navbar */
+.btn-home, .btn-cadastro, .btn-sair, .btn-usario, .btn-cadastror, .btn-login{
+    margin-right: 25px;
+}
+/* Botao Navbar */
+.btn-home, .btn-cadastro, .btn-usario, .btn-cadastror, .btn-login {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.64);
+    
+    
+    transition: background-color 0.3s;
+}
+.btn-sair {
+    display: inline-block;
+    padding: 12.6px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.64); 
+   
+    transition: background-color 0.3s;
+}
+
+.btn-sair:hover, .btn-home:hover, .btn-cadastro:hover, .btn-usario:hover, .btn-cadastror:hover, .btn-loginv:hover {
+    background-color: darkgray; 
+    border: 2px solid #090909;
+}
+
+/*Search container*/
+#search-container{
+    background-image: url(../img/p_cropped.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 200px;
+    text-align: center;
+}
+#search-container h1{
+    color: #090909;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+#search-container form{
+    margin: 0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* Atividade */
+#atividade-container{
+    padding: 50px;
+
+}
+#atividade-container h2{
+    margin-bottom: 10px;
+}
+#atividade-container .subtitle{
+    color: #090909;
+    margin-bottom: 30px;
+}
+#cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#atividade-container .card{
+    border: 2px solid #090909;
+    flex: 1 1 24%;
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0.5%;
+    
+}
+#atividade-container img{
+    max-width: 250px;
+    max-height: fit-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #090909;
+}
+.card .card-serie{
+    color: #090909;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.card .card-tipo{
+    color: #090909;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card .card-nivel{
+    color: #090909;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: #353e48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin-bottom: 0;
+}
