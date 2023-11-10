@@ -17,13 +17,6 @@ use App\Http\Controllers\CadastController;
 
 Route::get('/', [CadastController::class, 'index']);
 Route::get('/tela/cadastroAtividade', [CadastController::class, 'create']);
+Route::get('/tela/dashboard/{id}', [CadastController::class, 'show']);
 Route::post('/tela', [CadastController::class, 'store']);
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::get('dashboard', [CadastController::class, 'dashboard']);

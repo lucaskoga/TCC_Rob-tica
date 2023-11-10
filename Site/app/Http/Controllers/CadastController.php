@@ -58,4 +58,20 @@ class CadastController extends Controller
 
         return redirect('/')->with('msg','Atividade Criado com Sucesso');
     }
+    
+    public function show($id){
+
+        $atividade = Atividade::findOrFail($id);
+
+        return view('tela.show', ['atividade' => $atividade]);
+
+    }
+
+
+    public function dashboard(){
+
+        $atividade = Atividade::all();
+
+        return view('dashboard', ['atividade' => $atividade]);
+    }
 }

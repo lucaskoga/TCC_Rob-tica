@@ -10,12 +10,20 @@ body{
     padding-bottom: 100px;
     position: relative;
     
+    
 }
 
-header{
-    background-color: lightgray;
-    border-bottom: 1px solid #ccc;
+header {
+    background: linear-gradient(to right, #3498db, #1abc9c);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #090909;
+    border-bottom: 2px solid #090909;
+    
 }
+
 .row {
     margin: 0;
 }
@@ -143,13 +151,12 @@ header{
     flex-wrap: wrap;
 }
 #atividade-container .card{
+    position: relative;
     border: 2px solid #090909;
-    flex: 1 1 24%;
-    max-width: 25%;
     border-radius: 10px;
     padding: 10px;
     margin: 0.5%;
-    
+    width: 300px;
 }
 #atividade-container img{
     max-width: 250px;
@@ -175,12 +182,65 @@ header{
     font-size: 20px;
     margin-bottom: 20px;
 }
+#atividade-container .card button {
+    position: absolute;
+    bottom: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Coloque o botão no centro horizontal */
+    transform: translateX(-50%); /* Centralize o botão horizontalmente */
+    background-color: #090909;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Home */
+header h1 {
+    font-size: 42px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.intro-images img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/* Conteudo page */
+#image-container {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+.img-fluid {
+    width: 100%; 
+    height: auto; 
+}
+
 /* footer */
 footer{
     text-align: center;
     background-color: #353e48;
     color: #FFF;
-    padding: 30px;
+    padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
