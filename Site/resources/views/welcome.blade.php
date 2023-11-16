@@ -5,7 +5,7 @@
 @section('content')
 
     <header>
-            <h1>Explorando o Futuro da Robótica</h1>
+            <h1>Explorando o Futuro com Robótica</h1>
             <p>Bem-vindo ao nosso site dedicado ao fascinante mundo da robótica!</p>
         </header>
 
