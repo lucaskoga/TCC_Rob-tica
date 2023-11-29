@@ -26,6 +26,9 @@
                         <li class="nav">
                             <a href="/" class="btn-home">Home</a>
                         </li>
+                        <li class="nav">
+                            <a href="/tela/cadastroInstituicao" class="btn-cadastro">Cadastrar Instituição</a>
+                        </li>
                         @auth
                         <li class="nav">
                             <a href="/tela/cadastroAtividade" class="btn-cadastro">Cadastrar</a>

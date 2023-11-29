@@ -20,3 +20,5 @@ Route::get('/tela/cadastroAtividade', [CadastController::class, 'create']);
 Route::get('/tela/dashboard/{id}', [CadastController::class, 'show']);
 Route::post('/tela', [CadastController::class, 'store']);
 Route::get('dashboard', [CadastController::class, 'dashboard']);
+Route::get('/tela/cadastroInstituicao', [CadastController::class, 'createinst']);
+Route::post('/tela', [CadastController::class, 'storeinst']);
