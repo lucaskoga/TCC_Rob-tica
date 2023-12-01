@@ -31,7 +31,7 @@
                         </li>
                         @auth
                         <li class="nav">
-                            <a href="/tela/cadastroAtividade" class="btn-cadastro">Cadastrar</a>
+                            <a href="/tela/cadastroAtividade" class="btn-cadastro">Cadastrar Atividade</a>
                         </li> 
                         <li class="nav">
                             <a href="/dashboard" class="btn-usario">Pagina Inicial dos Usuários</a>

@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\CadastController;
+use App\Http\Controllers\InstController;
 
 Route::get('/', [CadastController::class, 'index']);
 Route::get('/tela/cadastroAtividade', [CadastController::class, 'create']);
 Route::get('/tela/dashboard/{id}', [CadastController::class, 'show']);
-Route::post('/tela', [CadastController::class, 'store']);
+Route::post('/tela/cadastroAtividade', [CadastController::class, 'store']);
 Route::get('dashboard', [CadastController::class, 'dashboard']);
-Route::get('/tela/cadastroInstituicao', [CadastController::class, 'createinst']);
-Route::post('/tela', [CadastController::class, 'storeinst']);
+Route::get('/tela/cadastroInstituicao', [InstController::class, 'create']);
+Route::post('/tela/cadastroInstituicao', [InstController::class, 'store']);

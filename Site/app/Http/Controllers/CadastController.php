@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Atividade;
-use App\Models\Instituicao;
 
-class CadastController extends Controller
-{
+
+class CadastController extends Controller{
+
     public function index(){
 
         $atividade = Atividade::all();
@@ -75,47 +75,6 @@ class CadastController extends Controller
 
         return view('dashboard', ['atividade' => $atividade]);
     }
-
-    public function createinst(){
-
-        return view('tela.cadastrarInstituicao');
-    }
-    
-    public function storeinst(Request  $request){
-
-        $instituicao = new Instituicao;
-
-        $instituicao->nome = $request->nome;
-        $instituicao->descricao = $request->descricao;
-        $instituicao->cnpj = $request->cnpj;
-        $instituicao->atuacao = $request->atuacao;
-        $instituicao->publicoAlvo = $request->publicoAlvo;
-        $instituicao->Endereco = $request->Endereco;
-        $instituicao->cidade = $request->cidade;
-        $instituicao->cep = $request->cep;
-        $instituicao->bairro = $request->bairro;
-        $instituicao->telefone = $request->telefone;
-        $instituicao->email = $request->email;
-        $instituicao->nomeContato = $request->nomeContato;
-        $instituicao->funcaoContato = $request->funcaoContato;
-
-           
-        //image uploud
-        if($request->hasFile('image')&& $request->file('image')->isvalid()){
-
-            $requestImage = $request->image;
-            
-            $extension = $requestImage->extension();
-
-            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now") . "." . $extension);
-
-            $requestImage->move(public_path('img/Instituicao'), $imageName);
-
-            $instituicao->image = $imageName;
-
-        }
-        $instituicao->save();
-
-        return redirect('/')->with('msg','Instituicão Cadastrado com Sucesso');
-    }
+   
+   
 }

@@ -68,6 +68,12 @@ header {
     width: 100%;
     padding: 20px;
     background-color: #f7f7f7;
+    
+}
+#instituição-create-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f7f7;
 }
 /* Botao Navbar */
 .btn-home, .btn-cadastro, .btn-sair, .btn-usario, .btn-cadastror, .btn-login{
@@ -248,4 +254,9 @@ footer{
 }
 footer p{
     margin-bottom: 0;
+}
+/* TextFild*/
+
+.form-group{
+    width: 800px;
 }
